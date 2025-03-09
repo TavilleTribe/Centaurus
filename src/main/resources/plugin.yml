@@ -1,0 +1,11 @@
+name: Centaurus
+version: '${project.version}'
+main: com.tavillecode.centaurus.Centaurus
+author: DDG
+api-version: '1.20'
+commands:
+  centaurus:
+    aliases:
+      - cent
+      - ctr
+    usage: basic command

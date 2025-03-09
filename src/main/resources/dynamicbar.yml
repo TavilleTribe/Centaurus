@@ -1,0 +1,24 @@
+#Text: "&6&l➣ [Dynamic]&f &6&l✦ &3&nEnjoy&f &b&nYourself&f &6&l✦ &c&m&k1&c&m限时活动上线&k1&f &6&lↂ7"
+Text: "<#836FFF>༺ ᴛᴀᴠɪʟʟᴇ ɴᴇᴛᴡᴏʀᴋ © “ᴄʀᴇᴀᴛɪᴏɴ ᴀɴᴅ ʀᴇᴄʀᴇᴀᴛɪᴏɴ” ༻"
+BarColor: "GREEN"
+#BLUE,GREEN,PURPLE,PINK,RED,WHITE,YELLOW
+BarStyle: "SOLID"
+#SEGMENTED_6,SEGMENTED_10,SEGMENTED_12,SEGMENTED_20,SOLID
+Symbol: "[Dynamic]"
+Dynamic:
+  - "&6&n魔"
+  - "&e魔&6&n法"
+  - "&e魔法&6&n世"
+  - "&e魔法世&6&n界"
+  - "&6&n魔&e法世界"
+  - "&e魔&6&n法&e世界"
+  - "&e魔法&6&n世&e界"
+  - "&e魔法世&6&n界"
+  - "&e魔法世界"
+  - "&6&n魔法世界"
+  - "&e魔法世界"
+  - "&6&n魔法世界"
+  - "&e魔法世界"
+  - "&6&n魔法世界"
+  - "&e魔法世界"
+

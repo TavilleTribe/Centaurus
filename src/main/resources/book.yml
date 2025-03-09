@@ -1,0 +1,16 @@
+story:
+  title: "story"
+  author: "Interface39"
+  custom_sound: "entity.arrow.hit_player-1-1"
+  pages:
+    1:
+    - "<#FFDAB9>THIS IS A TEST"
+    - "YOU KNOW"
+    - "THAT"
+    - ""
+    - "<click:change_page:2><hover:show_text:'<red>Page'>Click</hover></click> to turn to page 2"
+    2:
+    - "I LOVE"
+    - "MINECRAFT"
+    - "YEAH~"
+
