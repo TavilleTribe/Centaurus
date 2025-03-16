@@ -8,6 +8,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.inventory.ItemStack;
 
+import java.awt.*;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Interface39
  * @version 1.0
@@ -28,7 +32,23 @@ public class PlayerDropItemListener implements Listener {
         if (itemStack.getItemMeta()!=null && itemStack.hasItemMeta() && itemStack.getItemMeta().hasDisplayName()) {
             entity.setCustomNameVisible(true);
             entity.customName(itemStack.displayName());
-            plugin.getGlowingEntitiesAPI().setGlowing(entity,e.getPlayer(), ChatColor.GOLD);
+            if (itemStack.getItemMeta().hasLore()) {
+                String type = itemStack.getItemMeta().getLore().get(0);
+                if (type != null && hash.containsKey(type)) {
+                    plugin.getGlowingEntitiesAPI().setGlowing(entity,e.getPlayer(), hash.get(type));
+                }
+            }
         }
+    }
+
+    private static Map<String,ChatColor> hash;
+
+    static {
+        hash = new HashMap<>();
+        hash.put("§9工具",ChatColor.GRAY);
+        hash.put("§9防具",ChatColor.LIGHT_PURPLE);
+        hash.put("§9材料",ChatColor.DARK_GRAY);
+        hash.put("§9魔法",ChatColor.GOLD);
+        hash.put("§9食品",ChatColor.GREEN);
     }
 }
