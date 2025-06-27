@@ -27,6 +27,7 @@ public class PlayerJoinListener implements Listener {
         //this.plugin.getGlobalBar().getBarObject().addPlayer(e.getPlayer());
         //plugin.getUpdater().sendPlayer(e.getPlayer());
         MiniMessage mm = MiniMessage.miniMessage();
+
         e.getPlayer().showBossBar(plugin.getGlobalBar().getBarObject());
         plugin.getGlobalTabList().setTabList(e.getPlayer());
         new AScoreBoard(e.getPlayer());

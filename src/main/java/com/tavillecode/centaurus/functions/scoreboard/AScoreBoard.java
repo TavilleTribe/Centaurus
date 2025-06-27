@@ -32,7 +32,7 @@ public class AScoreBoard {
     }
 
     public void update() {
-        this.boardObj.updateLines(title);
+        this.boardObj.updateTitle(title);
         this.boardObj.updateLines(components);
     }
 

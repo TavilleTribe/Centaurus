@@ -9,8 +9,11 @@ group = "com.tavillecode"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    maven(url = "https://repo.codemc.io/repository/maven-releases/")
+    maven(url = "https://repo.codemc.io/repository/maven-snapshots/")
     mavenCentral()
     mavenLocal()
+    maven(url = "https://maven.evokegames.gg/snapshots")
     //maven("https://repo.codemc.io/repository/maven-snapshots")
 }
 
@@ -22,7 +25,9 @@ dependencies {
     paperweight.paperDevBundle("1.20.1-R0.1-SNAPSHOT")
     //compileOnly(files("C:/Users/19074/Downloads/BetterHud-bukkit-1.11.4.jar"))
     compileOnly(files("D:/魔法世界2/plugins/ItemStorage-1.0-SNAPSHOT.jar"))
-    //compileOnly(files("C:/Users/19074/Desktop/ChatHead-0.0.5.jar"))
+    compileOnly("com.github.retrooper:packetevents-spigot:2.7.0")
+    implementation("me.tofaa.entitylib:spigot:+1f4aeef-SNAPSHOT")
+//compileOnly(files("C:/Users/19074/Desktop/ChatHead-0.0.5.jar"))
 }
 
 publishing {
